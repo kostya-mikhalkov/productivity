@@ -1,0 +1,48 @@
+.promo {
+    padding: 20px 0;
+    &__flex {
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+        width: 26px;
+        height: 26px;
+        background-color: $main-color;
+        border-radius: 50%;
+    }
+    &__link {
+        margin-left: 73px;
+       ul {
+        display: flex;
+        align-items: center;
+        gap: 42px;
+        margin-bottom: 0;
+        li {
+            list-style-type: none;
+
+            a {
+                text-decoration: none;
+                font-size: 12px;
+                letter-spacing: 0.05em;
+                text-transform: capitalize;
+                color: #697CA6;
+                text-shadow: 0px 0px 5px #E6E6E6;
+                transition: all 0.3 ease;
+                &:hover {
+                    color: rgb(0, 0, 0);
+                }
+            }
+        }
+       }
+    }
+    &__account {
+        display: block;
+        margin-left: auto;
+        a + a {
+            margin-left: 30px;
+        }
+        .btn {
+            margin-left: 44px;
+        }
+    }
+}
