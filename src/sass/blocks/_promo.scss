@@ -1,6 +1,7 @@
 .promo {
     padding: 20px 0;
     &__flex {
+        position: relative;
         display: flex;
         align-items: center;
     }

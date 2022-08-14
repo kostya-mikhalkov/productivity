@@ -2,11 +2,38 @@
     .container {
         max-width: 960px;
     }
+    .slider {
+        &__info {
+            width: 960px;
+            div {
+                width: 960px;
+            }
+        }
+    }
+    .promo {
+        &__logo, &__link, &__account {
+            display: none;
+        }
+    }
+    .hamburger {
+        display: block;
+    }
+    .manage {
+        padding: 50px 0;
+    }
 }
 
 @media (max-width: 992px) {
     .container {
         max-width: 720px;
+    }
+    .slider {
+        &__info {
+            width: 720px;
+            div {
+                width: 720px;
+            }
+        }
     }
 }
 
@@ -14,11 +41,79 @@
     .container {
         max-width: 540px;
     }
+    .slider {
+        &__info {
+            width: 540px;
+            div {
+                width: 540px;
+            }
+        }
+    }
+    .manage {
+        &__picture {
+            max-width: 540px;
+            height: auto;
+        }
+    }
 }
 
 @media (max-width: 576px) {
     .container {
         width: 100%;
         padding: 0 10px;
+    }
+    .slider {
+        &__info {
+            width: 320px;
+            div {
+                width: 320px;
+            }
+        }
+        &__title {
+            font-size: 30px;
+        }
+    }
+    .menu {
+        &__block {
+            width: 240px;
+        }
+    }
+    .manage {
+        padding: 0;
+        &__flex {
+            gap: 5px;
+        }
+        &__content {
+            order: 5;
+        }
+        &__picture {
+            order: 1;
+        }
+        &__subtitle, &__title, &__text{
+            text-align: center;
+        }
+        &__link {
+            justify-content: center;
+        }
+        &__title {
+            font-size: 26px;
+        }
+        &__text {
+            font-size: 12px;
+        }
+    }
+    .about {
+        padding: 70px 0;
+        &__title {
+            margin-bottom: 20px;
+        }
+        &__flex {
+            gap: 20px;
+        }
+        &__click {
+            div {
+                padding: 0 20px;
+            }
+        }
     }
 }
