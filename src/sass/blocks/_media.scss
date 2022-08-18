@@ -35,6 +35,11 @@
             }
         }
     }
+    .users {
+        &__flex {
+            flex-wrap: wrap;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -114,6 +119,23 @@
             div {
                 padding: 0 20px;
             }
+        }
+    }
+    .users {
+        &__body {
+            width: 100%;
+        }
+        &__box {
+            margin-left: 0;
+            text-align: center;
+            margin-right: 0;
+            &_position {
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+        &__img {
+            margin: 0 auto;
         }
     }
 }
